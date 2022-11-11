@@ -1,7 +1,10 @@
 #!/bin/bash
-# Author: Margaret R. Starostik
-# Last update: 20170401 by Matthew Brooks
+
+#######################################
+# This file submits the Indexes.py snakefile to HPC SLURM
+# Written by Matthew Brooks on Mar 30, 2017
 # Run with: sbatch --time=4:00:00 submit.sh
+#######################################
 
 cd $SLURM_SUBMIT_DIR
 module load python/3.5
