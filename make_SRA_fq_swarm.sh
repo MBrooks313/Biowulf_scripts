@@ -1,14 +1,15 @@
 #!/bin/bash
 # This script makes a swarm file for downloading the fastq files for all the runs in a BioProject
 # Written by Matthew J. Brooks on Feb 12th, 2020
+# This script is made for running on Biowulf using SLURM.
 
 module load sratoolkit edirect
 
 #----------------#
 # Edit for BioProject ID and location for fastq files
-gse=GSE169262
-wd=/data/brooksma/sra-data/$gse
-ENTREZ_KEY=072dfb4981f604e6f461fff023e6ed8c8909
+gse=<GEO_accession>
+wd=/path/to/wd/$gse
+ENTREZ_KEY=<Eutils_API_key>
 
 #----------------#
 # Get the BioProject ID from the GEO ID
